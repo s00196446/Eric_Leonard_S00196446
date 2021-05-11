@@ -19,5 +19,17 @@ namespace Eric_Leonard_S00196446
         public decimal Price { get; set; }
 
         public string Game_Image { get; set; }
+
+        public Game()
+        {
+
+        }
+
+        public void DecreasePrice(double increase)
+        {
+            Price *= (decimal)(1 - increase);
+        }
     }
+
+
 }
